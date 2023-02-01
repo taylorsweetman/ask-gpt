@@ -1,0 +1,5 @@
+{
+  "temperature": 0,
+  "max_tokens": 1000,
+  "completions_model": "text-davinci-003"
+}
