@@ -19,3 +19,4 @@ class Usage:
 class Answer:
     text: str
     usage: Usage
+    estimated_cost: float

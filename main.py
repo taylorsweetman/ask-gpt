@@ -44,7 +44,10 @@ def main():
     print(answer.text)
 
     if args.verbose:
-        print(f"\n{answer.usage}")
+        print("\n~~~~~")
+        print(answer.usage)
+        print(config)
+        print(f"Estimated cost: ${'{:.6f}'.format(answer.estimated_cost)}")
 
 
 if __name__ == "__main__":
