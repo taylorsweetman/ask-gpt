@@ -25,13 +25,6 @@ def setup():
         nargs=1,
         help='your question prompt for ChatGPT, make sure you wrap the question in quotes (")',
     )
-    parser.add_argument(
-        "-v",
-        "--verbose",
-        action="store_true",
-        default=False,
-        help="show extra metadata like token usage",
-    )
     args = parser.parse_args()
 
     return config, args
@@ -41,13 +34,9 @@ def main():
     config, args = setup()
 
     answer = get_answer(config, args.question[0])
-    print(answer.text)
-
-    if args.verbose:
-        print("\n~~~~~")
-        print(answer.usage)
-        print(config)
-        print(f"Estimated cost: ${'{:.6f}'.format(answer.estimated_cost)}")
+    for word in answer:
+        print(word, end="")
+    print()
 
 
 if __name__ == "__main__":
