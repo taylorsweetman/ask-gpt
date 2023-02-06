@@ -70,3 +70,5 @@ ask-gpt "why is docker great?"
 ## Potential Future Enhancements
 
 - add more configuration options
+- context memory for follow-up questions
+
