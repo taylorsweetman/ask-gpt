@@ -15,6 +15,15 @@ $ ask-gpt "who is the prime minister of canada?"
 The prime minister of Canada is Justin Trudeau.
 ```
 
+Additionally, you can pass the temperature parameter with `-t <float>` like below.
+
+```text
+ask-gpt -t 0.9 "best type of food"                                                     
+
+
+That really depends on what you are looking for. Some of the most popular types of food include Italian, Chinese, Mexican, Mediterranean, American, French, and Japanese.
+```
+
 ## Configuration
 
 The [configuration](config.json) parameters to call the model with.
